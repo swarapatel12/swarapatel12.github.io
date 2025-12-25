@@ -1,122 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Swara Patel</title>
+* {
+  box-sizing: border-box;
+}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
 
-  <!-- AOS animations -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+.section {
+  padding: 80px 20px;
+}
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+.hero {
+  min-height: 100vh;
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-  <link rel="stylesheet" href="style.css">
-</head>
+.hero h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
 
-<body>
+.hero p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
-<section class="intro hero" id="home">
-  <div class="content">
-    <h1 data-aos="fade-right">SP</h1>
-    <h2 data-aos="fade-left">Swara Patel</h2>
-    <p data-aos="fade-up">Researcher · Advocate · Entrepreneur</p>
-    <a href="#about" class="scroll">↓</a>
-  </div>
-</section>
+.dark {
+  background: #111;
+  color: white;
+}
 
-<section class="intro dark" id="about">
-  <div class="content">
-    <h1 data-aos="fade-right">Researcher.</h1>
-    <h1 data-aos="fade-right">Advocate.</h1>
-    <h1 data-aos="fade-right">Entrepreneur.</h1>
+.light {
+  background: #f5f5f5;
+}
 
-    <p data-aos="fade-up">
-      I am a student researcher and climate advocate working at the intersection
-      of science, sustainability, and policy. I have spoken at TEDx and the
-      United Nations and lead research in agriculture, desalination, and climate resilience.
-    </p>
-  </div>
-<section class="intro light" id="work">
-  <div class="content">
-    <h2 data-aos="fade-up">Initiatives</h2>
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
 
-    <!-- ORIGINAL INITIATIVES (KEEP THIS) -->
-    <div class="cards">
-      <div class="card" data-aos="fade-right">
-        <h3>Mango United</h3>
-        <p>Founder & CEO — Sustainable farm-to-table business supporting local farmers.</p>
-      </div>
+h2 {
+  margin-bottom: 20px;
+}
 
-      <div class="card" data-aos="fade-up">
-        <h3>Science Buddies Club</h3>
-        <p>Founder & President — STEM mentorship program for elementary students.</p>
-      </div>
+.initiative-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+}
 
-      <div class="card" data-aos="fade-left">
-        <h3>Climate Cardinals</h3>
-        <p>Communications Specialist for North America.</p>
-      </div>
-    </div>
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
 
-    <!-- ROW 1: RESEARCH -->
-    <h3 class="row-title" data-aos="fade-right">Research & Publications</h3>
-    <div class="row-grid">
+.row-title {
+  margin: 40px 0 15px;
+  font-size: 1.4rem;
+}
 
-      <div class="initiative-box" data-aos="fade-up">
-        <h4>Polymicrobial Fertilizers</h4>
-        <p>ISEF & State Science Fair research on predicting crop yield using root growth analysis.</p>
-      </div>
+.row-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
-      <div class="initiative-box" data-aos="fade-up" data-aos-delay="100">
-        <h4>Phytodesalination</h4>
-        <p>Duckweed-based desalination research in saltwater hydroponics.</p>
-      </div>
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
 
-      <div class="initiative-box" data-aos="fade-up" data-aos-delay="200">
-        <h4>Air Pollution & ML</h4>
-        <p>Published research on PM2.5 and PM10 forecasting using machine learning models.</p>
-      </div>
+a {
+  color: inherit;
+  text-decoration: underline;
+}
 
-    </div>
+/* MOBILE */
+@media (max-width: 768px) {
+  .initiative-cards,
+  .row-grid {
+    grid-template-columns: 1fr;
+  }
 
-    <!-- ROW 2: COMMUNITY -->
-    <h3 class="row-title" data-aos="fade-left">Community Engagement</h3>
-    <div class="row-grid">
-
-      <div class="initiative-box" data-aos="fade-up">
-        <h4>Hillsborough Youth Council</h4>
-        <p>Executive Board member working on civic engagement and community projects.</p>
-      </div>
-
-      <div class="initiative-box" data-aos="fade-up" data-aos-delay="100">
-        <h4>Reef Renewal Blog</h4>
-        <p>Writer raising awareness on coral restoration and reef-safe practices.</p>
-      </div>
-
-      <div class="initiative-box" data-aos="fade-up" data-aos-delay="200">
-        <h4>Scientific Scuba Diver</h4>
-        <p>AAUS-certified diver conducting coral surveys, restoration, and marine cleanups.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<section class="intro dark" id="contact">
-  <div class="content">
-    <h2 data-aos="fade-up">Contact</h2>
-    <p>Email: <a href="mailto:Swarap3109@gmail.com">Swarap3109@gmail.com</a></p>
-  </div>
-</section>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 1000, once: false });
-</script>
-
-</body>
-</html>
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
