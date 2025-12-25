@@ -70,3 +70,45 @@ body {
   border-radius: 10px;
   flex: 1;
 }
+.row-title {
+  margin-top: 40px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.row-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.initiative-box {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.initiative-box:hover {
+  transform: translateY(-6px);
+}
+
+.initiative-box h4 {
+  margin: 0 0 10px 0;
+}
+
+.initiative-box p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .row-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
