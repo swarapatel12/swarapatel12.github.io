@@ -1,78 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Swara Patel</title>
-  <link rel="stylesheet" href="style.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- AOS animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <section class="hero">
-    <h1>Swara Patel</h1>
-    <h2>Researcher · Advocate · Entrepreneur</h2>
-    <p>
-      Climate researcher, youth advocate, and entrepreneur working at the
-      intersection of science, sustainability, and policy.
+<section class="intro hero" id="home">
+  <div class="content">
+    <h1 data-aos="fade-right">SP</h1>
+    <h2 data-aos="fade-left">Swara Patel</h2>
+    <p data-aos="fade-up">Researcher · Advocate · Entrepreneur</p>
+    <a href="#about" class="scroll">↓</a>
+  </div>
+</section>
+
+<section class="intro dark" id="about">
+  <div class="content">
+    <h1 data-aos="fade-right">Researcher.</h1>
+    <h1 data-aos="fade-right">Advocate.</h1>
+    <h1 data-aos="fade-right">Entrepreneur.</h1>
+
+    <p data-aos="fade-up">
+      I am a student researcher and climate advocate working at the intersection
+      of science, sustainability, and policy. I have spoken at TEDx and the
+      United Nations and lead research in agriculture, desalination, and climate resilience.
     </p>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h3>About Me</h3>
-    <p>
-      I am a student researcher and climate advocate based in Tampa, Florida.
-      My work spans agricultural science, environmental sustainability,
-      youth leadership, and public speaking at global platforms including
-      TEDx and the United Nations.
-    </p>
-  </section>
+<section class="intro light" id="work">
+  <div class="content">
+    <h2 data-aos="fade-up">Initiatives</h2>
+    <div class="cards">
+      <div class="card" data-aos="fade-right">
+        <h3>Mango United</h3>
+        <p>Founder & CEO — Sustainable farm-to-table business</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <h3>Science Buddies</h3>
+        <p>Founder — STEM mentorship for elementary students</p>
+      </div>
+      <div class="card" data-aos="fade-left">
+        <h3>Climate Cardinals</h3>
+        <p>Communications Specialist, North America</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h3>Research</h3>
-    <ul>
-      <li>Polymicrobial fertilizers and crop yield prediction (ISEF, State Science Fair Winner)</li>
-      <li>Phytodesalination using duckweed in saltwater hydroponics</li>
-      <li>Plant-based life support systems for Mars</li>
-      <li>Biofortification of microgreens using cyanobacteria</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Publications</h3>
-    <ul>
-      <li>PM2.5 and PM10 prediction using ML – Environmental Chemistry & Ecotoxicology (2025)</li>
-      <li>Machine learning for air pollution forecasting – MLCS Engineering (2025)</li>
-      <li>Phytodesalination in hydroponics – IJHSR (2025)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Advocacy & Speaking</h3>
-    <ul>
-      <li>TEDx Speaker – Climate anxiety to climate action (18K+ views)</li>
-      <li>Youth Speaker – 80th United Nations General Assembly</li>
-      <li>Round Square International – Environment & Sustainability</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Entrepreneurship & Leadership</h3>
-    <ul>
-      <li>Founder & CEO, Mango United – $75K+ revenue supporting local farmers</li>
-      <li>Founder, Science Buddies Club – 40+ students, 2 Title I schools</li>
-      <li>Communications Specialist, Climate Cardinals (North America)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Contact</h3>
+<section class="intro dark" id="contact">
+  <div class="content">
+    <h2 data-aos="fade-up">Contact</h2>
     <p>Email: <a href="mailto:Swarap3109@gmail.com">Swarap3109@gmail.com</a></p>
-    <p>Location: Tampa, Florida</p>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Swara Patel</p>
-  </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: false });
+</script>
 
 </body>
 </html>
