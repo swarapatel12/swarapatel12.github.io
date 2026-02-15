@@ -163,6 +163,18 @@ h2 {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
+.buy-strip {
+  margin-top: 35px;
+  background: #e5e5e5;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 20px;
+  gap: 60px; /* <-- THIS adds space between text and button */
+}
 
 a {
   color: inherit;
