@@ -352,15 +352,14 @@ a {
   color: white;
   text-align: center;
 }
-
+ 
 .sponsor-grid {
   margin-top: 40px;
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 40px;
-  align-items: center;
-  justify-items: center;
-}
+  grid-template-columns:
+
+
 
 .sponsor img {
   max-width: 140px;
