@@ -441,3 +441,48 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+/* =========================
+   BOOK SECTION - DARK MODE
+   ========================= */
+
+#book {
+  background: #000;   /* black background */
+  color: white;       /* white text */
+}
+
+#book .book-layout {
+  display: flex;
+  flex-wrap: wrap; /* keep responsive for mobile */
+  gap: 40px;
+}
+
+#book .book-cover-wrap img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+#book .book-info {
+  flex: 1;
+}
+
+#book h2, 
+#book h3, 
+#book h4, 
+#book p, 
+#book .book-subtitle, 
+#book .book-desc {
+  color: white;  /* force text to white */
+}
+
+/* Buy button stays visible on black */
+#book .buy-btn {
+  background: #fff;   /* optional: invert button for visibility */
+  color: #000;
+}
+
+#book .buy-btn:hover {
+  background: #e5e5e5;
+}
