@@ -347,6 +347,29 @@
   ...
 </footer>
 
+<script>
+const pages = [
+  "sunny-cover.jpg",
+  "page1.jpg",
+  "page2.jpg",
+  "page3.jpg"
+];
 
+let currentPage = 0;
+
+function showPage() {
+  document.getElementById("bookPage").src = pages[currentPage];
+}
+
+function nextPage() {
+  currentPage = (currentPage + 1) % pages.length;
+  showPage();
+}
+
+function prevPage() {
+  currentPage = (currentPage - 1 + pages.length) % pages.length;
+  showPage();
+}
+</script>
 </body>
 </html>
