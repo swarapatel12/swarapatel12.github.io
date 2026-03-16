@@ -518,3 +518,23 @@ a {
   line-height: 1.8;
   max-width: 750px;
 }
+
+/* =========================
+   OPERATION SEASAFE - LIGHT GREY
+   ========================= */
+#operation-seasafe {
+  background: #f5f5f5;  /* light grey background */
+  color: #111;           /* dark text for readability */
+  padding: 80px 20px;
+}
+
+#operation-seasafe h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+#operation-seasafe p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 750px;
+}
