@@ -343,3 +343,47 @@ a {
   background: rgba(0,0,0,0.12);
 }
 
+/* =========================
+   SPONSORS SECTION
+   ========================= */
+
+.sponsored {
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.sponsor-grid {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor img {
+  max-width: 140px;
+  max-height: 60px;
+  object-fit: contain;
+  opacity: 0.85;
+
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.sponsor img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .sponsor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
