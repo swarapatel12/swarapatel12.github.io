@@ -427,14 +427,37 @@ a {
    CONTACT
    ========================= */
 
+/* =========================
+   CONTACT
+   ========================= */
+
 .contact {
   background: white;
   color: black;
-  text-align: center;
+  padding: 30px 20px; /* smaller height */
 }
 
 .contact-center {
-  padding: 20px 0;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact h2 {
+  margin-bottom: 5px;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
 }
 
 .contact a {
