@@ -486,3 +486,16 @@ a {
 #book .buy-btn:hover {
   background: #e5e5e5;
 }
+
+.buy-strip {
+  margin-top: 35px;
+  background: #000; /* black background */
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 20px;
+  gap: 60px;
+  color: white; /* text
