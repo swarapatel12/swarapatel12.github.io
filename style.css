@@ -779,3 +779,35 @@ a {
 .arrow:hover {
   background: rgba(0,0,0,0.9);
 }
+
+  /* =========================
+   BOOK VIEWER FIXED SIZE
+   ========================= */
+.book-layout {
+  display: flex;
+  gap: 40px; /* space between book and info */
+  flex-wrap: wrap; /* ensures mobile responsiveness */
+  align-items: flex-start;
+}
+
+.book-viewer {
+  position: relative;
+  width: 320px;  /* fixed width */
+  height: 450px; /* fixed height */
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+.book-page {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the box while preserving aspect ratio */
+  border-radius: 12px;
+}
+
+/* ARROWS */
+.arrow {
+  position: absolute;
+  top: 50%;                 /* vertical center */
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px
