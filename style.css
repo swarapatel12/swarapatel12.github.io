@@ -734,3 +734,48 @@ a {
 .arrow:hover {
   background: rgba(0,0,0,0.9);
 }
+
+  /* =========================
+   BOOK VIEWER FIXED SIZE
+   ========================= */
+.book-viewer {
+  position: relative;
+  width: 320px;   /* match cover width */
+  height: 450px;  /* match cover height */
+  margin: auto;   /* center horizontally */
+}
+
+.book-page {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fill the box without stretching */
+  border-radius: 12px;
+}
+
+/* ARROWS */
+.arrow {
+  position: absolute;
+  top: 50%;                 /* vertically centered */
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.arrow.left {
+  left: -20px;   /* slightly outside left side */
+}
+
+.arrow.right {
+  right: -20px;  /* slightly outside right side */
+}
+
+.arrow:hover {
+  background: rgba(0,0,0,0.9);
+}
