@@ -831,3 +831,49 @@ a {
 .arrow:hover {
   background: rgba(0,0,0,0.9);
 }
+
+/* BOOK LAYOUT */
+.book-layout {
+  display: flex;
+  align-items: flex-start; /* keep book and info aligned at top */
+  gap: 40px; /* space between book and info */
+}
+
+.book-viewer {
+  position: relative;
+  width: 300px; /* width of book cover */
+  height: 420px; /* height of book cover */
+  flex-shrink: 0;
+}
+
+.book-viewer img.book-page {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures all pages fill the container like the cover */
+  display: block;
+}
+
+.book-viewer .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.book-viewer .arrow.left {
+  left: -30px; /* adjust spacing outside book */
+}
+
+.book-viewer .arrow.right {
+  right: -30px;
+}
+
+/* Book info stays the same */
+.book-info {
+  flex: 1;
+}
