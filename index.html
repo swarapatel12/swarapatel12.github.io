@@ -152,9 +152,15 @@
   <div class="container book-layout">
 
     <!-- LEFT: BOOK COVER -->
-    <div class="book-cover-wrap">
-      <img src="sunny-cover.jpg" alt="Sunny Saves the Sea book cover" class="book-cover-img">
-    </div>
+  <div class="book-cover-wrap">
+
+  <button class="book-arrow left" onclick="prevPage()">❮</button>
+
+  <img id="bookPage" src="sunny-cover.jpg" class="book-cover-img">
+
+  <button class="book-arrow right" onclick="nextPage()">❯</button>
+
+</div>
 
     <!-- RIGHT: BOOK INFO -->
     <div class="book-info">
