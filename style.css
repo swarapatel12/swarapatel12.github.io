@@ -499,3 +499,22 @@ a {
   padding: 18px 20px;
   gap: 60px;
   color: white; /* text
+
+  /* =========================
+   OPERATION SEASAFE SECTION
+   ========================= */
+
+#operation-seasafe {
+  padding: 80px 20px;
+}
+
+#operation-seasafe h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+#operation-seasafe p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 750px;
+}
