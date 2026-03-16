@@ -347,33 +347,9 @@ a {
    SPONSORS
    ========================= */
 
-.sponsored {
-  background: #000;
-  color: white;
-  text-align: center;
-}
- 
-.sponsor-grid {
-  margin-top: 40px;
-
-  display: grid;
-  grid-template-columns:
-
-
-
-.sponsor img {
-  max-width: 140px;
-  max-height: 60px;
-  object-fit: contain;
-  opacity: 0.85;
-  filter: none; /* remove invert to see actual logo colors */
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.sponsor img:hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
+/* =========================
+   SPONSORS SECTION
+   ========================= */
 
 .sponsored {
   background: #000;
@@ -383,10 +359,17 @@ a {
 
 .sponsor-grid {
   margin-top: 40px;
-
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr); /* 5 logos per row */
   gap: 40px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsor {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -394,16 +377,9 @@ a {
   max-width: 140px;
   max-height: 60px;
   object-fit: contain;
-
- .sponsor img {
-  max-width: 140px;
-  max-height: 60px;
-  object-fit: contain;
-  opacity: 0.85;   /* keep */
-  filter: none;    /* remove the brightness/invert */
+  opacity: 0.9;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
- 
 
 .sponsor img:hover {
   opacity: 1;
