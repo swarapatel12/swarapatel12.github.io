@@ -538,3 +538,42 @@ a {
   line-height: 1.8;
   max-width: 750px;
 }
+
+
+/* =========================
+   BOOK PAGE ARROWS
+   ========================= */
+
+.book-cover-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.book-arrow:hover {
+  background: rgba(0,0,0,0.9);
+}
+
+.book-arrow.left {
+  left: -20px;
+}
+
+.book-arrow.right {
+  right: -20px;
+}
